@@ -1,0 +1,209 @@
+body {
+  background-image: linear-gradient(
+    288deg,
+    rgba(0, 85, 255, 1) 1.5%,
+    rgba(4, 56, 115, 1) 91.6%
+  );
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 500px;
+  border-radius: 15px;
+  height: 500px;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.container img {
+  width: 120px;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+}
+
+.smContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+  line-height: 2rem;
+}
+
+label {
+  display: flex;
+  text-align: start;
+  font-weight: 100;
+  justify-content: start;
+}
+
+.smContainer span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.smContainer label {
+  font-size: 1.5rem;
+}
+.smContainer input {
+  padding: 20px 0px;
+  width: 480px;
+}
+
+input {
+  background-color: transparent;
+  border: 2px solid rgb(185, 188, 197);
+  outline: none;
+  font-size: 0.9rem;
+  color: #7ad4b7;
+  font-weight: bold;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: rgb(185, 188, 197);
+  font-size: 15px;
+}
+
+textarea {
+  background-color: transparent;
+  width: 480px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #7ad4b7;
+  font-weight: bold;
+  border: 2px solid rgb(185, 188, 197);
+}
+textarea::placeholder {
+  color: rgb(185, 188, 197);
+  font-size: 15px;
+}
+#textToCopy {
+  resize: none;
+}
+.textAreadiv {
+  position: relative;
+}
+.copyBtn {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 10px;
+  top: 40px;
+  color: #a8f3df;
+  cursor: pointer;
+}
+
+.targetUrl {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #a8f3df;
+  right: 10px;
+  bottom: 20px;
+}
+.ShortBtn {
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin: 10px auto;
+  border: none;
+  background-color: #5ae1b6;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+}
+.btnMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 10px;
+}
+
+.removeBtn {
+  padding: 10px 30px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin: 10px auto;
+  border: none;
+  background-color: #5ae1b6;
+  font-family: "Roboto Condensed", sans-serif;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 32px;
+  }
+  .container img {
+    width: 80px;
+  }
+  .smContainer input {
+    padding: 10px 0px;
+    width: 370px;
+  }
+  textarea {
+    width: 100%;
+  }
+  .btnMain {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .smContainer {
+    line-height: 2.6rem;
+  }
+  .copyBtn {
+    position: absolute;
+    font-size: 1.3rem;
+    right: 30px;
+    top: 103px;
+  }
+
+  .targetUrl {
+    position: absolute;
+    font-size: 1.3rem;
+    right: 0px;
+    bottom: 21px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 75%;
+    padding: 15px;
+  }
+  .smContainer input {
+    padding: 10px 0px;
+    width: 260px;
+  }
+  .smContainer {
+    line-height: 2.5rem;
+  }
+  .removeBtn {
+    padding: 5px 20px;
+  }
+  .ShortBtn {
+    padding: 5px 20px;
+  }
+  .copyBtn {
+    position: absolute;
+    font-size: 1.3rem;
+    right: 30px;
+    top: 103px;
+  }
+
+  .targetUrl {
+    position: absolute;
+    font-size: 1.3rem;
+    right: 0px;
+    bottom: 19px;
+  }
+}

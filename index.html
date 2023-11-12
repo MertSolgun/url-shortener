@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortener Link</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./backlinks.webp" type="image/gif" sizes="16x16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./backlinks.webp" alt="" />
+      <div class="smContainer">
+        <div>
+          <span>URL Shortner</span>
+        </div>
+        <div>
+          <label for="#">Enter Url to Shorten</label>
+          <input
+            type="text"
+            name="text"
+            id="link"
+            placeholder="https://www.exampleurl.com/"
+          />
+        </div>
+        <div class="btnMain">
+          <button class="ShortBtn">Short It</button>
+          <button class="removeBtn">Remove</button>
+        </div>
+        <div class="textAreadiv">
+          <label for="#">Shortened Url:</label>
+          <textarea
+            name="dataLink"
+            id="textToCopy"
+            cols="40"
+            rows="5"
+            placeholder="https://tinyurl.com/yktw2as8"
+          ></textarea>
+          <i
+            class="fa-solid fa-copy copyBtn"
+            onclick="copyToClipboard()"
+            style="display: none"
+          ></i>
+          <a href="#" class="targetUrl" target="_blank" style="display: none">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
